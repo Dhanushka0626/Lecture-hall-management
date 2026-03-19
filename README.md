@@ -105,31 +105,25 @@ Lecture-hall-management/
 ├── frontend/ # React frontend
 │ ├── public/
 │ ├── src/
-│ ├── assets/
-│ ├── components/
+│ ├── dist/
 │ ├── pages/
-│ ├── services/
-│ ├── context/
+│ ├── eslint.config.js
+│ ├── package.json
 │ ├── utils/
-│ ├── App.jsx
-│ └── main.jsx
 │
 ├── backend/ # Node.js backend
 │ ├── src/
-│ │ ├── config/
 │ │ ├── models/
 │ │ ├── controllers/
 │ │ ├── routes/
 │ │ ├── services/
 │ │ ├── middleware/
-│ │ ├── app.js
-│ │ └── server.js
+│ │ ├── scripts/
 │
 ├── tests/ # Integration and system tests
 │
 ├── .gitignore
-├── README.md
-└── package.json
+└── README.md
 
 ```
 ---
