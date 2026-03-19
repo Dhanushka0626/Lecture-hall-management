@@ -1,5 +1,3 @@
-
-
 export const themeClasses = {
   // Page containers
     pageContainer: "min-h-screen bg-gray-50 dark:bg-slate-900 transition-colors px-4 sm:px-6 lg:px-8",
@@ -78,7 +76,6 @@ export const themeClasses = {
   sidebarItem: "px-4 py-2 rounded-lg text-gray-700 dark:text-slate-300 hover:bg-gray-100 dark:hover:bg-slate-700 transition",
   sidebarItemActive: "bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 font-medium",
 };
-
 
 export const cn = (...classes) => {
   return classes.filter(Boolean).join(' ');

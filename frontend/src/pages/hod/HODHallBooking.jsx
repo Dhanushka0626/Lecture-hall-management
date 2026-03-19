@@ -41,7 +41,6 @@ const LecturerHallAvailability = () => {
       }
     }
 
-    // Ensure times are on the hour
     const startMinutes = startTime.split(":")[1] || "";
     const endMinutes = endTime.split(":")[1] || "";
     if (startMinutes !== "00" || endMinutes !== "00") {

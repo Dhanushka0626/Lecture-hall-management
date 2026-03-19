@@ -17,12 +17,12 @@ const userService = {
   },
 
   forgotPassword: async (identifier) => {
-    const res = await API.post('/users/forgot-password', { email: identifier }, { skipAuth: true });
+    const res = await API.post('/users/forgot-password', { email: identifier });
     return res.data;
   },
 
   resetPassword: async (token, newPassword) => {
-    const res = await API.post(`/users/reset-password/${token}`, { newPassword }, { skipAuth: true });
+    const res = await API.post(`/users/reset-password/${token}`, { newPassword });
     return res.data;
   }
 };

@@ -1,19 +1,12 @@
 import axios from "axios";
 
-const API_BASE_URL = (
-  import.meta.env.VITE_API_BASE_URL ||
-  "https://timelyx-backend-1.onrender.com"
-).replace(/\/+$/, "");
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3000";
 
 const axiosClient = axios.create({
   baseURL: API_BASE_URL,
 });
 
 axiosClient.interceptors.request.use((config) => {
-  if (config.skipAuth) {
-    return config;
-  }
-
   // Support token stored either as `token` key or inside `user.token`.
   const token = localStorage.getItem("token") || (() => {
     try {

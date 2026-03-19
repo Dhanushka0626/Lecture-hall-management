@@ -28,8 +28,7 @@ export const AuthProvider = ({ children }) => {
         localStorage.setItem('user', JSON.stringify(merged));
         setUser(merged);
       } catch (e) {
-        // Account no longer exists or token is invalid - force a clean logout
-        // so the user is redirected to the login page.
+
         console.error('Session verification failed — logging out:', e?.response?.data?.message || e.message);
         localStorage.removeItem('user');
         localStorage.removeItem('token');

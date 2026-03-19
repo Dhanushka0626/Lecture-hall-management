@@ -426,7 +426,7 @@ const LecturerNoticeManagement = () => {
                 >
                   <option value="">Select Course</option>
                   <option value="SE301">Software engineering</option>
-                  <option value="DB302">Machine learning</option>
+                  <option value="DB302">Database systems</option>
                 </select>
 
                 <select
